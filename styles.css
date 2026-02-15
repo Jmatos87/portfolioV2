@@ -989,6 +989,14 @@
                 gap: 1rem;
             }
 
+            .synthwave-bg {
+                height: 33vh;
+            }
+
+            .grid-floor {
+                animation-duration: 2s;
+            }
+
             .project-image-label {
                 font-size: 2rem;
             }
