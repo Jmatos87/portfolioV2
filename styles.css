@@ -652,8 +652,32 @@
             color: rgba(0, 0, 0, 0.3);
         }
 
-        .project-image--etrm {
-            background: linear-gradient(135deg, #00ffff 0%, #ff0080 100%);
+        .project-card--link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            cursor: pointer;
+        }
+
+        .project-image--oxnom {
+            background: linear-gradient(135deg, #0a1628 0%, #122040 50%, #0a1628 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .project-logo {
+            max-width: 260px;
+            width: 60%;
+            height: auto;
+            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.3));
+            transition: all 0.4s ease;
+        }
+
+        .project-card--link:hover .project-logo {
+            filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.5));
+            transform: scale(1.05);
         }
 
         .project-image--3d {
