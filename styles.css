@@ -680,18 +680,6 @@
             transform: scale(1.05);
         }
 
-        .project-image--3d {
-            background: linear-gradient(135deg, #b026ff 0%, #ff0080 100%);
-        }
-
-        .project-image--3d .project-image-label,
-        .project-image--trading .project-image-label {
-            color: rgba(255, 255, 255, 0.3);
-        }
-
-        .project-image--trading {
-            background: linear-gradient(135deg, #0080ff 0%, #b026ff 100%);
-        }
 
         .project-image--queryflow {
             background: linear-gradient(135deg, #ff0080 0%, #00ffff 100%);
