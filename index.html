@@ -3,599 +3,301 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta name="description" content="Josh Matos - AI-Augmented Full-Stack Engineer with 9+ years building enterprise applications for Fortune 500 energy and financial services clients."/>
-  <title>
-   Josh Matos - AI-Augmented Full-Stack Engineer
-  </title>
+  <meta name="description" content="Josh Matos — AI-augmented full-stack engineer with 9+ years building enterprise applications for Fortune 500 energy and financial services clients."/>
+  <title>Josh Matos</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x26A1;</text></svg>"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&amp;family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link href="styles.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
  </head>
  <body>
-  <!-- Synthwave background - stays at bottom -->
-  <div class="synthwave-bg">
-   <div class="sunset-layer">
-   </div>
-   <div class="grid-floor">
-   </div>
-  </div>
 
   <!-- Navigation -->
-  <nav class="nav">
-   <div class="nav-logo">JM</div>
-   <div class="nav-links">
-    <a class="nav-link" href="#about">About</a>
-    <a class="nav-link" href="#experience">Experience</a>
-    <a class="nav-link" href="#projects">Projects</a>
-    <a class="nav-link" href="#skills">Skills</a>
-    <a class="nav-link" href="#education">Education</a>
-    <a class="nav-link" href="#contact">Contact</a>
+  <nav class="nav" id="nav">
+   <a class="nav-name" href="#" id="nav-home">Josh Matos</a>
+   <div class="nav-links" id="nav-links">
+    <a href="#projects">Enterprise</a>
+    <a href="#personal-projects-bottom">Projects</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
    </div>
-   <button class="nav-toggle" aria-label="Toggle navigation">
+   <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fa-solid fa-moon"></i>
+   </button>
+   <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
     <span></span>
     <span></span>
     <span></span>
    </button>
   </nav>
 
-  <div class="container">
+  <main>
+
    <!-- Hero -->
    <section class="hero">
-    <div class="hero-label">
-     [ AI-AUGMENTED FULL-STACK ENGINEER ]
-    </div>
-    <h1 class="hero-name">
-     JOSH MATOS
-    </h1>
-    <p class="hero-title">
-     ENTERPRISE ENGINEER / AI-AUGMENTED PROBLEM SOLVER
-    </p>
-    <a class="cyber-button" href="#about">
-     LEARN MORE
-    </a>
+    <p class="hero-typewriter" id="hero-typewriter"></p>
+    <h1 class="hero-tagline gradient-text">I make complex systems feel simple</h1>
+    <p class="hero-subtitle">Full-stack engineer with 9+ years building enterprise-grade applications for Fortune 500 clients like BP, Shell, and JP Morgan. Known for leading high-performing teams, growing junior engineers into senior contributors, and delivering complex software that scales. Bringing that same level of craft and leadership to my next role, with AI as a force multiplier.</p>
    </section>
-   <!-- About Section -->
-   <section class="section" id="about">
-    <div class="section-header">
-     <div class="section-number">
-      01
-     </div>
-     <h2 class="section-title">
-      About Me
-     </h2>
-    </div>
-    <div class="about-container">
-     <div class="about-image-wrapper">
-      <img alt="Josh Matos - AI-Augmented Full-Stack Engineer" class="about-image" src="dark-blue-background-designify.png"/>
-      <div class="image-frame-tl">
-      </div>
-      <div class="image-frame-br">
-      </div>
-     </div>
-     <div class="about-content">
-      <div class="about-intro">
-       AI has transformed me from a specialist into a full-stack force multiplier.
-      </div>
-      <div class="about-text">
-       <p>
-        I built my career as a front-end architect, mastering enterprise-scale UI systems for Fortune 500 clients like BP, Shell Energy, Koch, Macquarie, Mercuria, and CCI—companies collectively representing 17% of the U.S. natural gas market. But AI tools have fundamentally changed what I can deliver: I now architect and ship complete solutions spanning frontend, backend, QA, and infrastructure—all on my own.
-       </p>
-       <p>
-        With AI-augmented development, I've eliminated the traditional bottlenecks. I can rapidly prototype backends in Node.js or Python, write comprehensive test suites, design database schemas, and architect cloud infrastructure—all while maintaining the pixel-perfect, performance-obsessed frontend work I'm known for. What used to require a team of 5+ engineers, I can now scope, build, and deploy independently.
-       </p>
-       <p>
-        My superpower: I deeply understand complex business domains (trading workflows, operational systems, data pipelines) AND I can translate that understanding into working software across the entire stack. Currently expanding into AI-native architecture with MCP servers, tool-enabled LLM workflows, and RAG systems—because I don't just use AI to code, I build AI-powered products.
-       </p>
-      </div>
-      <div class="expertise-grid">
-       <div class="expertise-item">
-        <div class="expertise-label">
-         Frontend Foundation
-        </div>
-        <div class="expertise-value">
-         React • TypeScript • Three.js • Performance Optimization • Enterprise UI Systems
-        </div>
-       </div>
-       <div class="expertise-item">
-        <div class="expertise-label">
-         AI-Augmented Full Stack
-        </div>
-        <div class="expertise-value">
-         Node.js • Python • SQL • API Design • Cloud Architecture • QA/Testing • End-to-End Delivery
-        </div>
-       </div>
-       <div class="expertise-item">
-        <div class="expertise-label">
-         Domain Expertise
-        </div>
-        <div class="expertise-value">
-         Rapid Industry Mastery • Trading Systems • Workflow Automation • AI/ML Integration
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="juggernaut-section">
-     <h3 class="juggernaut-title">Why Juggernaut?</h3>
-     <p class="juggernaut-source">From X-Men Wiki:</p>
-     <blockquote class="juggernaut-quote">
-      "Once he begins to advance in a certain direction, it is virtually impossible to halt his movement. Some obstacles, such as many tons of rocks and plasma-discharge cannons, have slowed his pace, but can't stop him."
-     </blockquote>
-    </div>
-   </section>
-   <!-- Stats -->
-   <div class="stats-grid">
-    <div class="stat-card">
-     <div class="stat-number">
-      9+
-     </div>
-     <div class="stat-label">
-      Years Experience
-     </div>
-    </div>
-    <div class="stat-card">
-     <div class="stat-number">
-      6
-     </div>
-     <div class="stat-label">
-      Major Energy Clients
-     </div>
-    </div>
-    <div class="stat-card">
-     <div class="stat-number">
-      5
-     </div>
-     <div class="stat-label">
-      Team Members Led
-     </div>
-    </div>
-    <div class="stat-card">
-     <div class="stat-number">
-      &infin;
-     </div>
-     <div class="stat-label">
-      Impact Delivered
-     </div>
-    </div>
-   </div>
-   <!-- Work History -->
-   <section class="section" id="experience">
-    <div class="section-header">
-     <div class="section-number">
-      02
-     </div>
-     <h2 class="section-title">
-      Work History
-     </h2>
-    </div>
-    <div class="timeline">
-     <div class="timeline-item">
-      <div class="timeline-date">
-       04/2025 – Present
-      </div>
-      <div class="timeline-tag">
-       [ CURRENT ]
-      </div>
-      <h3 class="timeline-title">
-       Senior Technical Consultant
-      </h3>
-      <div class="timeline-company">
-       B2B AI Growth Engine
-      </div>
-      <p class="timeline-description">
-       Auditing enterprise websites for performance, SEO, ADA accessibility, and functionality testing. Defining and implementing technical strategies to improve lead generation, conversion, and overall site performance for B2B clients.
-      </p>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       06/2022 – 04/2025
-      </div>
-      <div class="timeline-tag">
-       [ ENTERPRISE SCALE ]
-      </div>
-      <h3 class="timeline-title">
-       Lead Front End Engineer
-      </h3>
-      <div class="timeline-company">
-       Eleox
-      </div>
-      <p class="timeline-description">
-       Led front-end architecture for a suite of distributed ledger-powered products transforming post-trade processes in North American natural gas trading. Built the entire UI layer for four production platforms—Oxoracle, Oxpair, Oxnom, and Oxsettle—each solving distinct workflow challenges for Fortune 500 energy clients on a private, permissioned blockchain.
-      </p>
-      <ul class="timeline-highlights">
-       <li>
-        Built platforms serving BP, Shell Energy, Koch Energy Services, Macquarie, Mercuria, and CCI—companies collectively representing 15% of the U.S. wholesale natural gas market
-       </li>
-       <li>
-        <strong>Oxoracle:</strong> Engineered the data standardization UI that maps proprietary ETRM system nomenclature to a universal industry language, enabling real-time reconciliation between counterparty systems
-       </li>
-       <li>
-        <strong>Oxpair:</strong> Built real-time trade confirmation interfaces with live counterparty matching, automated discrepancy detection, and legally binding digital confirmation workflows powered by smart contracts
-       </li>
-       <li>
-        <strong>Oxnom:</strong> Developed natural gas scheduling dashboards integrating U.S. and Canadian pipelines—featuring EDI nomination submission, position summaries, volume tracking, and real-time pipeline cut visibility across nomination cycles
-       </li>
-       <li>
-        <strong>Oxsettle:</strong> Created invoice reconciliation views with pipeline invoice aggregation, granular discrepancy identification, and customizable tolerance configurations to expedite cash flow and P&amp;L reporting
-       </li>
-       <li>
-        Led team of 5 engineers (3 internal + 2 contractors), established front-end standards and component architecture across all four products
-       </li>
-       <li>
-        Partnered directly with traders, schedulers, and operations teams to translate complex energy domain requirements into intuitive, scalable UI solutions—contributing to an expected 20–40% reduction in post-trade processing costs
-       </li>
-      </ul>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       04/2021 – 04/2022
-      </div>
-      <div class="timeline-tag">
-       [ E-COMMERCE ]
-      </div>
-      <h3 class="timeline-title">
-       Senior Software Engineer
-      </h3>
-      <div class="timeline-company">
-       JungleScout
-      </div>
-      <p class="timeline-description">
-       Led front-end performance optimization and bug resolution across the enterprise application, while making full-stack contributions spanning React, Node.js, Ruby on Rails, AWS CDK, and Docker. Collaborated with cross-functional teams to ship new products and improved load times by integrating caching strategies on both the front end and back end.
-      </p>
-      <ul class="timeline-highlights">
-       <li>
-        Drove enterprise app stability by systematically clearing the bug backlog and optimizing FE performance
-       </li>
-       <li>
-        Integrated front-end and back-end caching systems to measurably improve page load times
-       </li>
-       <li>
-        Partnered cross-functionally to deliver new product features end-to-end
-       </li>
-      </ul>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       01/2021 – 04/2021
-      </div>
-      <div class="timeline-tag">
-       [ 3D WEB ]
-      </div>
-      <h3 class="timeline-title">
-       Senior Front End Engineer
-      </h3>
-      <div class="timeline-company">
-       GoExpedi
-      </div>
-      <p class="timeline-description">
-       Delivered a 3D product configurator tailored for pipeline field workers, integrating dynamic views in a Three.js web engine driven by API calls, UI drawers, and contextual 3D part interactions to surface real-time data and drive user workflows.
-      </p>
-      <ul class="timeline-highlights">
-       <li>
-        Built interactive 3D views where clicking on components triggered contextual data panels and navigation
-       </li>
-       <li>
-        Partnered with nearshore engineering teams to streamline development workflows and delivery
-       </li>
-      </ul>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       04/2020 – 01/2021
-      </div>
-      <div class="timeline-tag">
-       [ AGENCY ]
-      </div>
-      <h3 class="timeline-title">
-       Senior Web Developer
-      </h3>
-      <div class="timeline-company">
-       Adcetera
-      </div>
-      <p class="timeline-description">
-       Built a 3D web application for selling HP servers—users could break the product into pieces and hover over hotspots for detailed component information. Introduced Gatsby.js to accelerate marketing site development and created sites for clients including LG and HP.
-      </p>
-      <ul class="timeline-highlights">
-       <li>
-        Engineered interactive 3D product explorer with component breakout views and contextual hotspots
-       </li>
-       <li>
-        Optimized large asset handling (130MB+) via local storage strategies for seamless 3D experiences
-       </li>
-       <li>
-        Introduced Gatsby.js to the team, enabling rapid generation of future marketing sites
-       </li>
-      </ul>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       09/2018 – 04/2020
-      </div>
-      <div class="timeline-tag">
-       [ FINTECH ]
-      </div>
-      <h3 class="timeline-title">
-       Software Engineer
-      </h3>
-      <div class="timeline-company">
-       JP Morgan Chase
-      </div>
-      <p class="timeline-description">
-       Created an ecosystem of applications helping bank traders execute stock trades, organize contacts, and explore new market opportunities. Coordinated across global teams for API integration and data modeling, and facilitated WebSocket communication between apps owned by separate teams.
-      </p>
-      <ul class="timeline-highlights">
-       <li>
-        Built trader productivity tools spanning deal execution, contact management, and market analysis
-       </li>
-       <li>
-        Led major refactoring efforts to modernize legacy codebases and reduce error rates
-       </li>
-       <li>
-        Integrated APIs and WebSocket channels across multiple teams to enable real-time cross-app communication
-       </li>
-      </ul>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       11/2017 – 09/2018
-      </div>
-      <div class="timeline-tag">
-       [ SAAS ]
-      </div>
-      <h3 class="timeline-title">
-       Front End Engineer
-      </h3>
-      <div class="timeline-company">
-       Meshify
-      </div>
-      <p class="timeline-description">
-       Created a Virtual Node Constructor allowing both developers and end users to build custom dashboards without code. Consulted directly with third-party clients on the design and implementation of their dashboard solutions.
-      </p>
-      <ul class="timeline-highlights">
-       <li>
-        Built a no-code dashboard builder enabling rapid creation and customization for technical and non-technical users
-       </li>
-       <li>
-        Partnered with external clients to translate their requirements into tailored dashboard implementations
-       </li>
-      </ul>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       07/2017 – 11/2017
-      </div>
-      <div class="timeline-tag">
-       [ ENERGY ]
-      </div>
-      <h3 class="timeline-title">
-       UI/UX Developer
-      </h3>
-      <div class="timeline-company">
-       EOG Resources
-      </div>
-      <p class="timeline-description">
-       Built applications for data scientists to write and preview algorithms in interactive charts based on pipeline data. Focused on data visualization and algorithm development tools for the energy sector.
-      </p>
-     </div>
-     <div class="timeline-item">
-      <div class="timeline-date">
-       08/2016 – 07/2017
-      </div>
-      <div class="timeline-tag">
-       [ LOGISTICS TECH ]
-      </div>
-      <h3 class="timeline-title">
-       Front End Engineer
-      </h3>
-      <div class="timeline-company">
-       Omnitracs
-      </div>
-      <p class="timeline-description">
-       Built a back-facing admin page to imitate user experience, provide admin functions, and analytics for the logistics platform.
-      </p>
-     </div>
-    </div>
-   </section>
-   <!-- Projects -->
+
+   <!-- Enterprise Projects -->
    <section class="section" id="projects">
-    <div class="section-header">
-     <div class="section-number">
-      03
-     </div>
-     <h2 class="section-title">
-      Featured Work
-     </h2>
-    </div>
+    <h2 class="section-label fade-in">Enterprise Projects</h2>
     <div class="projects-grid">
-     <a class="project-card project-card--link" href="https://www.eleox.com/#oxnom" target="_blank" rel="noopener noreferrer">
-      <div class="project-image project-image--oxnom">
-       <img src="https://www.eleox.com/wp-content/uploads/2024/12/oxnom.svg" alt="Oxnom by Eleox" class="project-logo" />
+     <a class="project-card fade-in" href="https://www.eleox.com/#oxnom" target="_blank" rel="noopener noreferrer">
+      <div class="project-card__image project-card__image--oxnom">
+       <img src="https://www.eleox.com/wp-content/uploads/2024/12/oxnom.svg" alt="Oxnom by Eleox" class="project-logo"/>
       </div>
-      <div class="project-info">
-       <div class="project-tag">
-        [ ENERGY TRADING • ELEOX ]
+      <div class="project-card__body">
+       <div class="project-card__meta">
+        <h3 class="project-card__title">Oxnom</h3>
+        <span class="project-card__date">2022–2025</span>
        </div>
-       <h3 class="project-title">
-        Oxnom
-       </h3>
-       <p class="project-description">
-        Natural gas scheduling platform integrating U.S. and Canadian pipelines. Features EDI nomination submission, position summaries, real-time pipeline cut visibility, and volume tracking across nomination cycles—serving BP, Shell, Koch, Macquarie, Mercuria, and CCI.
-       </p>
-       <div class="project-tech">
-        <span class="tech-chip">
-         React
-        </span>
-        <span class="tech-chip">
-         TypeScript
-        </span>
-        <span class="tech-chip">
-         DLT / Smart Contracts
-        </span>
-        <span class="tech-chip">
-         WebSockets
-        </span>
+       <p class="project-card__desc">Built for BP, Shell, Koch, Macquarie, Mercuria, and CCI — Oxnom turned a daily hour of manual deal-pairing into an automated process, while managing gas nominations across billions of dollars in energy trades.</p>
+       <div class="project-card__tags">
+        <span class="pill">React</span>
+        <span class="pill">TypeScript</span>
+        <span class="pill">Smart Contracts</span>
+        <span class="pill">WebSockets</span>
        </div>
       </div>
      </a>
-     <a class="project-card project-card--link" href="https://queryflow-chi.vercel.app/" target="_blank" rel="noopener noreferrer">
-      <div class="project-image project-image--queryflow">
-       <div class="project-image-label">
-        QUERYFLOW
-       </div>
+     <a class="project-card fade-in" href="https://www.junglescout.com/products/cobalt" target="_blank" rel="noopener noreferrer">
+      <div class="project-card__image project-card__image--cobalt">
+       <img src="https://www.junglescout.com/wp-content/uploads/2025/03/Jungle-Scout-Branding-Wordmark.svg" alt="JungleScout" class="project-logo"/>
       </div>
-      <div class="project-info">
-       <div class="project-tag">
-        [ AI/ML • PERSONAL PROJECT • LIVE ]
+      <div class="project-card__body">
+       <div class="project-card__meta">
+        <h3 class="project-card__title">JungleScout Cobalt</h3>
+        <span class="project-card__date">2021–2022</span>
        </div>
-       <h3 class="project-title">
-        QueryFlow
-       </h3>
-       <p class="project-description">
-        AI-powered business intelligence tool that lets anyone analyze data using plain English—or any spoken language. Upload CSV, Excel, JSON, or SQL files, ask questions naturally, and get instant results with auto-generated visualizations and automatic cross-dataset JOINs.
-       </p>
-       <div class="project-tech">
-        <span class="tech-chip">
-         React
-        </span>
-        <span class="tech-chip">
-         TypeScript
-        </span>
-        <span class="tech-chip">
-         OpenAI
-        </span>
-        <span class="tech-chip">
-         PostgreSQL
-        </span>
+       <p class="project-card__desc">Enterprise Amazon intelligence platform trusted by Nike, 3M, Samsung, and Clorox. Joined to clear a critical bug backlog and stabilize the product, then shifted to delivering new pages and features end-to-end across a full React and Ruby on Rails stack.</p>
+       <div class="project-card__tags">
+        <span class="pill">React</span>
+        <span class="pill">Ruby on Rails</span>
+        <span class="pill">Node.js</span>
+        <span class="pill">AWS</span>
+        <span class="pill">Docker</span>
        </div>
       </div>
      </a>
     </div>
    </section>
-   <!-- Skills & Specializations -->
+
+   <!-- Work History -->
+   <section class="section" id="work">
+    <h2 class="section-label fade-in">Work History</h2>
+    <div class="work-list">
+
+     <div class="work-entry fade-in">
+      <div class="work-entry__header">
+       <span class="work-company">B2B AI Growth Engine</span>
+       <span class="work-dates">04/2025 – Present</span>
+      </div>
+      <p class="work-role">Senior Technical Consultant</p>
+      <p class="work-desc">Auditing enterprise websites for performance, SEO, ADA accessibility, and functionality. Defining and implementing technical strategies to improve lead generation, conversion, and overall site performance for B2B clients.</p>
+     </div>
+     <hr class="work-divider"/>
+
+     <div class="work-entry fade-in">
+      <div class="work-entry__header">
+       <span class="work-company">Eleox</span>
+       <span class="work-dates">06/2022 – 04/2025</span>
+      </div>
+      <p class="work-role">Lead Front End Engineer</p>
+      <p class="work-desc">Led front-end architecture for a suite of distributed ledger-powered products transforming post-trade processes in North American natural gas trading. Built the entire UI layer for four production platforms — Oxoracle, Oxpair, Oxnom, and Oxsettle — each solving distinct workflow challenges for Fortune 500 energy clients.</p>
+      <ul class="work-highlights">
+       <li>Platforms served BP, Shell Energy, Koch Energy Services, Macquarie, Mercuria, and CCI — collectively ~15% of the U.S. wholesale natural gas market</li>
+       <li><strong>Oxoracle:</strong> Data standardization UI mapping proprietary ETRM nomenclature to a universal industry language for real-time reconciliation</li>
+       <li><strong>Oxpair:</strong> Real-time trade confirmation with live counterparty matching, discrepancy detection, and smart contract-powered digital confirmation workflows</li>
+       <li><strong>Oxnom:</strong> Natural gas scheduling dashboards for U.S. and Canadian pipelines — EDI nomination, position summaries, volume tracking, real-time pipeline cut visibility</li>
+       <li><strong>Oxsettle:</strong> Invoice reconciliation views with pipeline aggregation, discrepancy identification, and configurable tolerance controls</li>
+       <li>Led team of 5 engineers; established front-end standards and component architecture across all four products</li>
+      </ul>
+     </div>
+     <hr class="work-divider"/>
+
+     <div class="work-entry fade-in">
+      <div class="work-entry__header">
+       <span class="work-company">JungleScout</span>
+       <span class="work-dates">04/2021 – 04/2022</span>
+      </div>
+      <p class="work-role">Senior Software Engineer</p>
+      <p class="work-desc">Led front-end performance optimization and bug resolution across the enterprise application, with full-stack contributions spanning React, Node.js, Ruby on Rails, AWS CDK, and Docker.</p>
+      <ul class="work-highlights">
+       <li>Cleared the bug backlog and drove enterprise app stability</li>
+       <li>Integrated front-end and back-end caching to measurably improve page load times</li>
+       <li>Partnered cross-functionally to deliver new product features end-to-end</li>
+      </ul>
+     </div>
+     <hr class="work-divider"/>
+
+     <div class="work-entry fade-in">
+      <div class="work-entry__header">
+       <span class="work-company">GoExpedi</span>
+       <span class="work-dates">01/2021 – 04/2021</span>
+      </div>
+      <p class="work-role">Senior Front End Engineer</p>
+      <p class="work-desc">Delivered a 3D product configurator for pipeline field workers — dynamic Three.js views driven by API calls, UI drawers, and contextual 3D part interactions.</p>
+      <ul class="work-highlights">
+       <li>Interactive 3D views where clicking components triggered contextual data panels and navigation</li>
+       <li>Partnered with nearshore engineering teams to streamline delivery</li>
+      </ul>
+     </div>
+     <hr class="work-divider"/>
+
+     <div class="work-entry fade-in">
+      <div class="work-entry__header">
+       <span class="work-company">Adcetera</span>
+       <span class="work-dates">04/2020 – 01/2021</span>
+      </div>
+      <p class="work-role">Senior Web Developer</p>
+      <p class="work-desc">Built a 3D web application for selling HP servers — users could break the product into pieces and hover over hotspots for detailed component info. Created marketing sites for LG and HP using Gatsby.js.</p>
+      <ul class="work-highlights">
+       <li>Engineered interactive 3D product explorer with component breakout views and contextual hotspots</li>
+       <li>Handled 130MB+ asset optimization via local storage for seamless 3D experiences</li>
+       <li>Introduced Gatsby.js to the team, enabling rapid marketing site generation</li>
+      </ul>
+     </div>
+     <hr class="work-divider"/>
+
+     <div class="work-entry fade-in">
+      <div class="work-entry__header">
+       <span class="work-company">JP Morgan Chase</span>
+       <span class="work-dates">09/2018 – 04/2020</span>
+      </div>
+      <p class="work-role">Software Engineer</p>
+      <p class="work-desc">Built an ecosystem of applications helping bank traders execute stock trades, organize contacts, and explore new market opportunities across global teams.</p>
+      <ul class="work-highlights">
+       <li>Trader productivity tools spanning deal execution, contact management, and market analysis</li>
+       <li>Led major refactoring to modernize legacy codebases and reduce error rates</li>
+       <li>Integrated APIs and WebSocket channels across teams for real-time cross-app communication</li>
+      </ul>
+     </div>
+
+    </div>
+   </section>
+
+   <!-- Skills -->
    <section class="section" id="skills">
-    <div class="section-header">
-     <div class="section-number">
-      04
-     </div>
-     <h2 class="section-title">
-      Skills &amp; Tools
-     </h2>
-    </div>
-    <div class="skills-grid">
-     <div class="skill-category">
-      <div class="skill-category-label">Languages &amp; Scripting</div>
-      <div class="skill-items">
-       <span class="tech-chip">JavaScript (ES6+)</span>
-       <span class="tech-chip">TypeScript</span>
-       <span class="tech-chip">SQL</span>
-       <span class="tech-chip">Python</span>
+    <h2 class="section-label fade-in">Skills &amp; Tools</h2>
+    <div class="skills-list fade-in">
+     <div class="skill-group">
+      <span class="skill-group__label">Languages</span>
+      <div class="skill-group__pills">
+       <span class="pill">JavaScript (ES6+)</span>
+       <span class="pill">TypeScript</span>
+       <span class="pill">SQL</span>
+       <span class="pill">Python</span>
       </div>
      </div>
-     <div class="skill-category">
-      <div class="skill-category-label">Frameworks &amp; Libraries</div>
-      <div class="skill-items">
-       <span class="tech-chip">React</span>
-       <span class="tech-chip">Node.js</span>
-       <span class="tech-chip">Express</span>
-       <span class="tech-chip">Three.js</span>
-       <span class="tech-chip">Gatsby.js</span>
-       <span class="tech-chip">Ruby on Rails</span>
-       <span class="tech-chip">D3.js</span>
+     <div class="skill-group">
+      <span class="skill-group__label">Frameworks &amp; Libraries</span>
+      <div class="skill-group__pills">
+       <span class="pill">React</span>
+       <span class="pill">Node.js</span>
+       <span class="pill">Express</span>
+       <span class="pill">Three.js</span>
+       <span class="pill">Gatsby.js</span>
+       <span class="pill">Ruby on Rails</span>
+       <span class="pill">D3.js</span>
       </div>
      </div>
-     <div class="skill-category">
-      <div class="skill-category-label">AI &amp; Emerging Tech</div>
-      <div class="skill-items">
-       <span class="tech-chip">MCP Servers</span>
-       <span class="tech-chip">LLM Workflows</span>
-       <span class="tech-chip">RAG Systems</span>
-       <span class="tech-chip">OpenAI API</span>
-       <span class="tech-chip">AI-Augmented Development</span>
+     <div class="skill-group">
+      <span class="skill-group__label">AI &amp; Emerging</span>
+      <div class="skill-group__pills">
+       <span class="pill">MCP Servers</span>
+       <span class="pill">LLM Workflows</span>
+       <span class="pill">RAG Systems</span>
+       <span class="pill">OpenAI API</span>
+       <span class="pill">AI-Augmented Dev</span>
       </div>
      </div>
-     <div class="skill-category">
-      <div class="skill-category-label">Domain &amp; Systems</div>
-      <div class="skill-items">
-       <span class="tech-chip">ETRM Systems</span>
-       <span class="tech-chip">Trading Workflows</span>
-       <span class="tech-chip">WebSockets</span>
-       <span class="tech-chip">API Design</span>
-       <span class="tech-chip">Cloud Architecture</span>
-       <span class="tech-chip">Performance Optimization</span>
+     <div class="skill-group">
+      <span class="skill-group__label">Domain</span>
+      <div class="skill-group__pills">
+       <span class="pill">ETRM Systems</span>
+       <span class="pill">Trading Workflows</span>
+       <span class="pill">WebSockets</span>
+       <span class="pill">API Design</span>
+       <span class="pill">Cloud Architecture</span>
+       <span class="pill">Performance Optimization</span>
       </div>
      </div>
-     <div class="skill-category">
-      <div class="skill-category-label">Industries</div>
-      <div class="skill-items">
-       <span class="tech-chip">Energy &amp; Natural Gas</span>
-       <span class="tech-chip">Financial Services</span>
-       <span class="tech-chip">Commodities Trading</span>
-       <span class="tech-chip">E-Commerce</span>
-       <span class="tech-chip">Logistics</span>
+     <div class="skill-group">
+      <span class="skill-group__label">Industries</span>
+      <div class="skill-group__pills">
+       <span class="pill">Energy &amp; Natural Gas</span>
+       <span class="pill">Financial Services</span>
+       <span class="pill">Commodities Trading</span>
+       <span class="pill">E-Commerce</span>
+       <span class="pill">Logistics</span>
       </div>
      </div>
     </div>
    </section>
+
    <!-- Education -->
    <section class="section" id="education">
-    <div class="section-header">
-     <div class="section-number">
-      05
+    <h2 class="section-label fade-in">Education</h2>
+    <div class="education-list fade-in">
+     <div class="education-entry">
+      <span class="education-name">The Iron Yard</span>
+      <span class="education-detail">Front End Engineering · 2016</span>
      </div>
-     <h2 class="section-title">
-      Education
-     </h2>
-    </div>
-    <div class="education-cards">
-     <div class="education-card">
-      <div class="education-degree">The Iron Yard Coding Bootcamp</div>
-      <div class="education-school">Front End Engineering &bull; 2016</div>
-     </div>
-     <div class="education-card">
-      <div class="education-degree">B.S. in Hospitality Management</div>
-      <div class="education-school">University of Houston</div>
+     <div class="education-entry">
+      <span class="education-name">University of Houston</span>
+      <span class="education-detail">B.S. Hospitality Management</span>
      </div>
     </div>
    </section>
+
+   <!-- Personal Projects -->
+   <section class="section" id="personal-projects-bottom">
+    <h2 class="section-label fade-in">Personal Projects</h2>
+    <div class="projects-grid">
+     <a class="project-card fade-in" href="https://queryflow-chi.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <div class="project-card__image project-card__image--queryflow"></div>
+      <div class="project-card__body">
+       <div class="project-card__meta">
+        <h3 class="project-card__title">QueryFlow</h3>
+        <span class="project-card__date">2026</span>
+       </div>
+       <p class="project-card__desc">AI-powered business intelligence tool — upload CSV, Excel, JSON, or SQL files, ask questions in plain English, get instant results with auto-generated visualizations and automatic cross-dataset JOINs.</p>
+       <div class="project-card__tags">
+        <span class="pill">React</span>
+        <span class="pill">TypeScript</span>
+        <span class="pill">OpenAI</span>
+        <span class="pill">PostgreSQL</span>
+       </div>
+      </div>
+     </a>
+    </div>
+   </section>
+
    <!-- Contact -->
    <section class="section" id="contact">
-    <div class="section-header">
-     <div class="section-number">
-      06
-     </div>
-     <h2 class="section-title">
-      Get In Touch
-     </h2>
-    </div>
-    <div class="contact-container">
-     <p class="contact-text">
-      Interested in working together? I'm always open to discussing new opportunities, enterprise projects, and AI-powered solutions.
-     </p>
-     <div class="contact-links">
-      <a class="contact-link" href="mailto:josuematos87@gmail.com">
-       <span class="contact-link-label">Email</span>
-       <span class="contact-link-value">josuematos87@gmail.com</span>
-      </a>
-      <a class="contact-link" href="https://www.linkedin.com/in/joshmatos/" target="_blank" rel="noopener noreferrer">
-       <span class="contact-link-label">LinkedIn</span>
-       <span class="contact-link-value">linkedin.com/in/joshmatos</span>
-      </a>
-      <a class="contact-link" href="https://github.com/Jmatos87" target="_blank" rel="noopener noreferrer">
-       <span class="contact-link-label">GitHub</span>
-       <span class="contact-link-value">github.com/Jmatos87</span>
-      </a>
-     </div>
+    <h2 class="section-label fade-in">Get In Touch</h2>
+    <div class="contact-icons fade-in">
+     <a class="contact-icon" href="mailto:josuematos87@gmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+     </a>
+     <a class="contact-icon" href="https://www.linkedin.com/in/joshmatos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+     </a>
+     <a class="contact-icon" href="https://github.com/Jmatos87" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+     </a>
     </div>
    </section>
-  </div>
 
-  <!-- Footer -->
+  </main>
+
   <footer class="footer">
-   <div class="footer-content">
-    <div class="footer-name">Josh Matos</div>
-    <div class="footer-divider"></div>
-    <div class="footer-tagline">AI-Augmented Full-Stack Engineer</div>
-   </div>
+   <p>Josh Matos · AI-Augmented Full-Stack Engineer</p>
   </footer>
 
   <script src="main.js"></script>
