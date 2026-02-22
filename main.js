@@ -226,8 +226,7 @@ function initThemeToggle() {
     if (!btn || !icon) return;
 
     const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isDark = saved ? saved === 'dark' : prefersDark;
+    const isDark = saved ? saved === 'dark' : true;
 
     function applyTheme(dark) {
         document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
