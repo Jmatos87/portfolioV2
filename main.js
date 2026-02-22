@@ -128,16 +128,95 @@ function initFadeIn() {
     elements.forEach(el => observer.observe(el));
 }
 
-// ─── Gradient text follows mouse ──────────────────────
+// ─── Wireframe globe ──────────────────────────────────
+function initGlobe() {
+    const canvas = document.getElementById('globe-canvas');
+    if (!canvas || typeof THREE === 'undefined') return;
+
+    const size = Math.min(window.innerHeight * 0.95, 800);
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(size, size);
+    renderer.setClearColor(0x000000, 0);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+    camera.position.z = 2.8;
+
+    // Sphere wireframe
+    const geo = new THREE.SphereGeometry(1, 16, 16);
+    const wireGeo = new THREE.WireframeGeometry(geo);
+    const mat = new THREE.LineBasicMaterial({ color: 0x00b482, opacity: 0.35, transparent: true });
+    const globe = new THREE.LineSegments(wireGeo, mat);
+    scene.add(globe);
+
+    // Subtle glow overlay — slightly larger solid sphere
+    const glowGeo = new THREE.SphereGeometry(1.01, 32, 32);
+    const glowMat = new THREE.MeshBasicMaterial({ color: 0x00bcd2, wireframe: false, transparent: true, opacity: 0.03 });
+    scene.add(new THREE.Mesh(glowGeo, glowMat));
+
+    // Mouse influence
+    let targetX = 0, targetY = 0;
+    document.addEventListener('mousemove', (e) => {
+        targetX = (e.clientX / window.innerWidth - 0.5) * 0.6;
+        targetY = (e.clientY / window.innerHeight - 0.5) * 0.6;
+    });
+
+    // Resize
+    window.addEventListener('resize', () => {
+        const s = Math.min(window.innerHeight * 0.95, 800);
+        renderer.setSize(s, s);
+    });
+
+    let autoY = 0;
+    (function animate() {
+        requestAnimationFrame(animate);
+        autoY += 0.002;
+        globe.rotation.y = autoY + targetX;
+        globe.rotation.x += (targetY - globe.rotation.x) * 0.05;
+        renderer.render(scene, camera);
+    })();
+}
+
+// ─── Gradient text: idle animation + mouse follow ─────
 function initGradientMouse() {
     const el = document.querySelector('.gradient-text');
     if (!el) return;
 
+    let mouseX = 50, mouseY = 50;
+    let currentX = 50, currentY = 50;
+    let lastMouseMove = 0;
+
     document.addEventListener('mousemove', (e) => {
-        const x = 100 - (e.clientX / window.innerWidth) * 100;
-        const y = 100 - (e.clientY / window.innerHeight) * 100;
-        el.style.backgroundPosition = `${x}% ${y}%`;
+        mouseX = 100 - (e.clientX / window.innerWidth) * 100;
+        mouseY = 100 - (e.clientY / window.innerHeight) * 100;
+        lastMouseMove = Date.now();
     });
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        const idleSeconds = (Date.now() - lastMouseMove) / 1000;
+        const isIdle = idleSeconds > 1;
+
+        let targetX, targetY;
+        if (isIdle) {
+            const t = Date.now() / 1000;
+            targetX = 50 + Math.sin(t * 0.4) * 45;
+            targetY = 50 + Math.cos(t * 0.3) * 45;
+        } else {
+            targetX = mouseX;
+            targetY = mouseY;
+        }
+
+        const ease = isIdle ? 0.02 : 0.08;
+        currentX += (targetX - currentX) * ease;
+        currentY += (targetY - currentY) * ease;
+
+        el.style.backgroundPosition = `${currentX}% ${currentY}%`;
+    }
+
+    animate();
 }
 
 // ─── Dark mode toggle ─────────────────────────────────
@@ -180,6 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initNavHome();
     initThemeToggle();
+    initGlobe();
     initGradientMouse();
     initTypewriter();
     initFadeIn();
