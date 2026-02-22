@@ -341,6 +341,11 @@ a {
     padding: 2rem;
 }
 
+.project-card__image--jpmorgan {
+    background: linear-gradient(135deg, #f5f0e8 0%, #ede5d5 100%);
+    padding: 2rem;
+}
+
 .project-card__body {
     padding: 1.5rem;
 }
