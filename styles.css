@@ -204,11 +204,11 @@ a {
     text-align: center;
     position: relative;
     overflow: hidden;
-    justify-content: center;
-    text-align: center;
     padding: 8rem var(--content-padding) 4rem;
     max-width: var(--max-width);
     margin: 0 auto;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 #globe-canvas {
@@ -594,6 +594,11 @@ a {
         transition: right 0.3s ease;
         border-left: 1px solid var(--border);
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.06);
+    }
+
+    [data-theme="dark"] .nav-links {
+        background: rgba(17, 17, 17, 0.98);
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.4);
     }
 
     .nav-links--open {
