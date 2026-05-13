@@ -54,11 +54,11 @@ function initTypewriter() {
     if (!el) return;
 
     const phrases = [
-        'full-stack engineer',
+        'lead front-end engineer',
         'AI-augmented builder',
         'systems thinker',
         '9+ years in enterprise',
-        'versatile across every layer',
+        'UI craft for serious domains',
     ];
 
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
